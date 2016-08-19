@@ -20,6 +20,7 @@ class BinaryTree {
         void preOrder();
         void postOrder();
         void destroy();
+        bool isLeaf(Node *r);
 };
 
 #endif

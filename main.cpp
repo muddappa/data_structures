@@ -44,5 +44,24 @@ int main()
     cout << "#######SEARCH#######" << endl;
     Node* n = bst->search(8);
     cout << n->data << endl;
+    bst->deleteNode(4);
+    cout << "#######INORDER#######" << endl;
+    bst->inOrder();
+    cout << endl;
+    bst->insertOnCondition(1, 1);
+    cout << "#######INORDER#######" << endl;
+    bst->inOrder();
+    cout << endl;
 
+    bst->insertOnCondition(18, 3);
+    cout << "#######INORDER#######" << endl;
+    bst->inOrder();
+    cout << endl;
+    Node* near = bst->findNearest(20);
+    cout << "Nearest Node for value " << 20 << " is " << near->data << endl;
+
+    cout << "Finding two nodes whoes sum becomes 13" << endl;
+    Node *node1 = NULL, *node2 = NULL;
+    bst->findNodes(13, node1, node2);
+    cout << node1->data << "\t" << node2->data << endl;
 }

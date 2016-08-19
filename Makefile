@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-I.
+CFLAGS=-I. -g
 DEPS = *.hh
 OBJ = BinarySearchTree.o BinaryTree.o Node.o main.o
 

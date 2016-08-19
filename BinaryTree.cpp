@@ -51,3 +51,7 @@ void BinaryTree::destroy(Node* r) {
     destroy(r->right);
     delete r;
 }
+
+bool BinaryTree::isLeaf(Node *r) {
+    return (r && r->left == NULL and r->right == NULL);
+}
